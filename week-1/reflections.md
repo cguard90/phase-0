@@ -1,14 +1,8 @@
 #1.1 Think about Time
 
-
-
 In these resources, I did learn a few new things and brushed up on some old knowledge. I had been familiar with and exposed to the benefits of meditation previously and it is something that I have utilized in the past. I may try doing it again during phase 0, as it does have numerous benefits, and I do want to get as much as I can out of phase 0. The new ideas to me were the counter-intuitive methods / tips for being productive, and the Pomodoro technique. The primary take away I got from the counter-intuitive methods was that you need to take care of yourself as a person if you're going to be productive, as Happiness or satisfaction is just as important as what you actually accomplished (and incorporating the other resources, the happier and more satisfied you are, the more are likely to accomplish as well). I will be doing my best to utilize the Pomodoro technique (especially on weeknights) throughout phase 0.
 
-
-
 I currently can't say that I utilize any of the methods that were outlined. I have largely relied on to do lists, and to be honest it doesn't work as well as it used to. I have felt pretty exhausted (mostly due to work being over bearing) and so I will definitely be tweaking how I approach challenges and utilizing my time during phase 0. I will be doing my best to utilize the Pomodoro technique as I mentioned above, but I do think I'll also try to meditate for a time, (perhaps right before bed, I also have someone I can meditate with, so that could be nice). I'll be utilizing timeboxing as well (especially with the peer programming), I'm looking forward to that. I also liked the bit about starting with the minimum viable product in the article on successful habits, as I thought this was a good building block for many things. Oh and additionally I'll be trying to identify where I have growth and fixed mindsets, so that way I don't sell myself short on any opportunities that could arise during the program.
-
-
 
 My phase 0 plan looks roughly like this: work on assignments on Monday evenings until roughly 9pm EST (it ends up being about 2 hrs, I don't get to start until 7pm EST), and then after that I'm actually going to be utilizing days off of work to be productive as well. I used to rock climb (won't be doing that any more sadly), so the time I used to spend climbing will be spent on phase 0 (2 hrs monday wed friday) plus morning / afternoons on weekends, and any time off I will be taking from work (it's a lot). The last time I had a week off from work to focus on coding was during December on 2014, and I was able to compress a lot of learning into a small time frame. It ultimately was not as much learning as I would have liked, but it did lead me to discovering new resources to learn from as well. Although I'll only have 2 days off per week (every week but this week for the duration of phase 0), if I utilize my time well, I think this will be a very educational time and time well spent.
 
@@ -18,8 +12,6 @@ I also have 2 dogs, they can't code, but they make for great coding companions.
 1. Shell is another name for terminal, or whatever framework runs Unix on that particular PC. It's a system that uses no graphic representation of codes. Bash is the commands that are entered into Unix. They are separate things, but they are used together.
 
 2. This actually brought up several challenges. first, I was really going quite slowly at first, trying to take in everything as a whole, rather than understanding the concept and moving forward. It did throw off my schedule for the week a bit because I was moving slowly. The next challenge I had was making assumptions. When it got to the section regarding 'cat' command, I assumed that he was inputting the data to the text file using the 'cat' command, rather than just displaying the data. I looked it up because I wondered why my display kept presenting something different and not letting me input data (lol). I liked that later on it was covered that you can create a text file using cat though, I felt a little better then.
-
-
 
 3. Yes I was, although a few I had to double check capitalization, and I also made sure I didn't skip ahead of any, even simple things like 'ls' to display what had changed within the directory.
 
@@ -52,7 +44,6 @@ I also have 2 dogs, they can't code, but they make for great coding companions.
 I looked up 'help' because I didn't know, and help provides a list of commands (in terminal). That is good to know :).
 
 ### 1.4 Forking and Cloning
-
 
 to write instructions, I would really be careful to include all necessary steps trying to use as little technically lingo as possible for someone (as an introduction). They would go as follows (hopefully I don't skip any...)
 
