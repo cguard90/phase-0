@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kitten in a bow tie </title>
+</head>
+<body>
+  <img src ="">
+  <h1>Kitten in a bow tie</h1>
+  <p> Welcome to my <a href ="www.bing.com">kitten</a> page</p>
+  <h2>Things I like about kittens</h2>
+  <ul>
+    <li> They are playful during the day</li>
+    <li> They are tiny cats </li>
+  </ul>
+  </body>
+</html>
