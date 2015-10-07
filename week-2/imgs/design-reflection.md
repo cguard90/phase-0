@@ -1,4 +1,4 @@
-[imgs/sitemap.png]
+<img src ="Sitemap.png">
 
 
     What are the 6 Phases of Web Design?
