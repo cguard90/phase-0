@@ -10,6 +10,7 @@ A wireframe is a rough framework / outline that will be followed for designing a
 
     What are the benefits of wireframing?
 It helps keep a project in line as it provides the visual guide to what is being built. Also it determines the use of space ahead of time rather than figuring out what will go where as you are coding. Additionally, for multiple person projects, it allows a reference point to steer towards during the design and code.
+
     Did you enjoy wireframing your site?
 I did actually, I didn't find the reading all that exciting, but I enjoyed working with the wireframe more than I had expected. I did have to timebox myself and eventually say that it was time to move on.
 
