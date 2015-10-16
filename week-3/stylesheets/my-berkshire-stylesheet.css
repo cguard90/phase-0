@@ -88,3 +88,26 @@ footer > section {
 .disclaimer {
   text-align: left;
 }
+
+/*
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+      relative pathways are rather important for making sure that you link it correctly without needing to write the whole link. that's a definite plus. Additionally, I'd say careful labeling is important as well.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+      I don't know if I would say I used any tricks... I used only 1 ID, a few classes, I believe there was a div, it was swapped out for a section though... I used a few nested labels. I would say something I could improve upon would be the organization of going through the document and where I place my CSS. I'm sure whoever reviews it will notice the order is not awesome.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+    I used sizes, colors, positions, alignments, font weights, borders, and padding.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't,
+    Yes out of necessity, I made a class out of everything that would go on the right side, and everything that would go on the left side. I also made the disclaimer a class. I then made INC an ID becuase it was a unique field which would only be used once.
+
+how would you know which one to add to your HTML?
+    I used classes if there were large blocks of HTML that would be coded uniformly. I used an ID for a section of HTML that would be unique from the rest, so it was code that would only be used once. From what I read, this is the best way to do it.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+    I actually didn't compare my code to the code base because I thought it would be cheating. I suppose I'll take a look now that you ask. I would say they have a cleaner code. The funny thing is I did initially use a table when I did the original pair challenge for just the HTML. I didn't use that because of the wording on the instructions here, and it left me with much more CSS to do, so I didn't mind, it was a learning experience.
+
+
+*/
