@@ -35,6 +35,6 @@ I got an error message on the address rspec and couldn't for the life of me figu
 
 =end
 
-address/mysolution.rb
+https://github.com/cguard90/phase-0/blob/master/week-4/address/my_solution.rb
 
-math/mysolution.rb
+https://github.com/cguard90/phase-0/blob/master/week-4/math/my_solution.rb
