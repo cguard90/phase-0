@@ -9,12 +9,16 @@ Integer division will always return a number without a decimal, so it rounds dow
 
 Hours in a year:
 
-''''ruby
+'''ruby
 puts 24 * 365
-''''
+'''
 
 Minutes in a decade:
 
-''''ruby
+'''ruby
 puts 60 * 24 * 365 * 10
-''''
+'''
+
+[defining variables](defining-variables.rb)
+
+[Simple String Methods](simple-string.rb)
