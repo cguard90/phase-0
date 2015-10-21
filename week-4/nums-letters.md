@@ -18,3 +18,5 @@ Minutes in a decade:
 ''''ruby
 puts 60 * 24 * 365 * 10
 ''''
+
+[defining-variables.rb](defining-variables.rb)
