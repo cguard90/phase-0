@@ -18,3 +18,6 @@ Minutes in a decade:
 ''''ruby
 puts 60 * 24 * 365 * 10
 ''''
+
+[defining variables](defining-variables.rb)
+[Simple String Methods](simple-string.rb)
