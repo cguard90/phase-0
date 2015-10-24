@@ -60,5 +60,3 @@ def sentence_maker str_array
   sentence.insert(-1, '.')
   return sentence
 end
-
-sentence_maker(['Alaska', 'has', 'over', '586', 'thousand', 'miles'])
