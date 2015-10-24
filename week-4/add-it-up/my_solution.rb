@@ -56,13 +56,9 @@ end
 def sentence_maker str_array
   sentence = ""
   str_array[0].capitalize!
-  for i in 0...( str_array.length )
-    sentence += str_array[i].to_s
-    if( i < str_array.length - 1 )
-      sentence += " "
-    else
-      sentence += "."
-    end
-  end
+  sentence = str_array.join(" ")
+  sentence.insert(-1, '.')
   return sentence
 end
+
+sentence_maker(['Alaska', 'has', 'over', '586', 'thousand', 'miles'])
