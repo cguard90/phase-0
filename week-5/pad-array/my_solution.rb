@@ -27,7 +27,7 @@ def pad!(array, min_size, value = nil)
 end
 
 #If the minimum size is less than or equal to the length of the array, it should just return the array.
-
+=begin
 def pad(array, min_size, value = nil) #non-destructive
   new_array = []
   array.each { |x|
@@ -44,29 +44,23 @@ def pad(array, min_size, value = nil) #non-destructive
     new_array
   end
 end
+=end
 
 # 3. Refactored Solution
 #we were not able to successfully refactor this... after 2 hrs of working on this, we decided to call it good
-=begin
+
 def pad(array, min_size, value = nil) #non-destructive
-  new_array = []
-  array.each { |x|
-    new_array << x
-  }
+  new_array = array.collect {|x| x }
 
-  array_length = new_array.length
-
-  if min_size <= array_length || min_size == 0  ###
+  if min_size <= new_array.length || min_size == 0  ###
     return new_array
   else
-    array_difference = min_size - array_length  ###
-    array_difference.times {new_array << value}
-
+    while new_array.length < min_size
+      new_array.push(value)
+    end
     new_array
-
   end
 end
-=end
 
 # 4. Reflection
 
@@ -81,6 +75,9 @@ On the destructive method, it actually went very smoothly. For the destructive m
 
     When you refactored, did you find any existing methods in Ruby to clean up your code?
 After 2 hours, we called it good. We were on to some potential solutions, but wanted a break. So at this point in time, no we did not successfully refactor, but I believe the .collect method, and we looked into a ternary operator as potential solutions.
+
+Went back in and refactored it slightly, a lot of the original is still there, but it's been cleaned up a bit.
+
     How readable is your solution? Did you and your pair choose descriptive variable names?
 I think our solutions are very readable, and our variable names are specific and easy to follow.
     What is the difference between destructive and non-destructive methods in your own words?
