@@ -1,8 +1,8 @@
 # Pad an Array
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [by myself, with: Syema Ailia]
 
-# I spent [] hours on this challenge.
+# I spent [2] hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
@@ -12,7 +12,7 @@
 
 
 # 0. Pseudocode
-
+#my pair typed the psuedocode, that's why I don't have it.
 # What is the input?
 # What is the output? (i.e. What should the code return?)
 # What are the steps needed to solve the problem?
