@@ -27,7 +27,7 @@ def pad!(array, min_size, value = nil)
 end
 
 #If the minimum size is less than or equal to the length of the array, it should just return the array.
-
+=begin
 def pad(array, min_size, value = nil) #non-destructive
   new_array = []
   array.each { |x|
@@ -44,29 +44,23 @@ def pad(array, min_size, value = nil) #non-destructive
     new_array
   end
 end
+=end
 
 # 3. Refactored Solution
 #we were not able to successfully refactor this... after 2 hrs of working on this, we decided to call it good
-=begin
+
 def pad(array, min_size, value = nil) #non-destructive
-  new_array = []
-  array.each { |x|
-    new_array << x
-  }
+  new_array = array.collect {|x| x }
 
-  array_length = new_array.length
-
-  if min_size <= array_length || min_size == 0  ###
+  if min_size <= new_array.length || min_size == 0  ###
     return new_array
   else
-    array_difference = min_size - array_length  ###
-    array_difference.times {new_array << value}
-
+    while new_array.length < min_size
+      new_array.push(value)
+    end
     new_array
-
   end
 end
-=end
 
 # 4. Reflection
 
