@@ -8,11 +8,32 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  answer = []
+  if source
+    source.each do |x|
+      if x.to_s.include? thing_to_find
+        answer << x.to_s
+      end
+    end
+  else
+    puts "Array is empty."
+  end
+  answer
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  solution = []
+
+  if source
+    source.each do |x, y|
+      if source[x] == thing_to_find
+        solution << x.to_s
+      end
+    end
+  else
+    puts "The Hash is empty"
+  end
+  solution
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -22,32 +43,46 @@ end
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.map! {|var|
+    if var.is_a?(Integer)
+      var + thing_to_modify
+    else
+      next var
+    end
+  }
+  p source
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.each do |var, num|
+    source[var] = num + thing_to_modify
+  end
+  p source
 end
 
 # Identify and describe the Ruby method(s) you implemented.
+#I want to create a sorting method that alphabetizes an array. I also want to create a sorting method that arranges the data in my hash by age (starting with the youngest first). I want to see what happens when I do this, but I don't want it to modify the existing data. In this example, the ages of two of the animals have changed to remove the added difficulty of ordering by name as well as age.
 #
 #
-#
-
+#numbers must come first in numerical order, and then letters in alphabetical order. Caps don't need to be accounted for in this case.
 
 # Person 3
 def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort_by { |element|
+    element.to_s
+  }
 end
 
 def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort_by { |name, age|
+    age
+  }
 end
 
 # Identify and describe the Ruby method(s) you implemented.
+# => sort_by - tells ruby to sort the elements. however all the elements need to be converted to strings, because I was getting an error message about Ruby nto wanting to sort integers and letters
 #
-#
-#
+#for the hash, sort by is still a method, but you have to specify whether you are sorting by the key or the value. As I needed to sort by the age, I needed to sort by the value.
 
 
 # Person 4
