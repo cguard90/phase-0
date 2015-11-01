@@ -101,13 +101,16 @@ end
 
 
 # Person 5
-def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_array_splitting_method(array)
+  num_array = array.grep(0..100)
+  str_array = array.grep(String)
+  return num_array, str_array
 end
 
-def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_hash_splitting_method(hash)
+  return hash.each_slice(1) {|slice| p slice}
 end
+
 
 # Identify and describe the Ruby method(s) you implemented.
 #
