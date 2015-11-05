@@ -10,19 +10,19 @@
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)      done
 
-#bingo should correspond to the index of the number within the array... probably going to have to try an if loop here. if number @ index is called, return the letter that corresponds to that index. done
+#bingo should correspond to the index of the number within the array... probably going to have to try an if loop here. if number @ index * is called, return the letter that corresponds to that index.     made it too complex....
 
-# Check the called column for the number called. done
+# Check the called column for the number called.
 #identify the index of the number called, index == column
 
-# If the number is in the column, replace with an 'x' done
-#if element is identified in that particular array, replace with x; else nothing. done
+# If the number is in the column, replace with an 'x'
+#if element is identified in that particular array, replace with x; else nothing.
 
-# Display a column to the console done
-#column should display at the end of each number done
+# Display a column to the console
+#column should display at the end of each number
 
 # Display the board to the console (prettily)
-  #this will be a pain. it's done. It's not awesome, but I'm ok with that.
+  #this will be a pain.
 
 # Initial Solution
 
@@ -129,20 +129,13 @@ class BingoBoard
       puts "what?"
     end
 
-    check_letters.flatten!(1)
-    @bingo_board == check_letters
-    puts @bingo_board[0].to_s
-    puts @bingo_board[1].to_s
-    puts @bingo_board[2].to_s
-    puts @bingo_board[3].to_s
-    puts @bingo_board[4].to_s
+    p check_letters.to_s
   end
 end
 
 
 # Refactored Solution
 
-# I spent over 3 hours on this. It needs to be refactored. I'm tomboxing myself, if there is time at the end of the week I will refactor. This is some seriously awful code work though, super repetetive. I will try to refactor it by the end of the week.
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
@@ -153,5 +146,5 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
-new_game.check_board(new_game.call_out_update)
+new_game.check_board(['B', 75])
 #Reflection
