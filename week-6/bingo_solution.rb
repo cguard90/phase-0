@@ -153,5 +153,5 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
-new_game.check_board(['B', 75])
+new_game.check_board(new_game.call_out_update)
 #Reflection
