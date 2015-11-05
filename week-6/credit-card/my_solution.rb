@@ -109,3 +109,16 @@ test.check_card
 
 
 # Reflection
+=begin
+    What was the most difficult part of this challenge for you and your pair?
+
+I find it challenging to work on coderpad. I just don't like the display on it. Other than that, we just had silly little typos and what not. I think we could have been more focused on getting the code to pass the tests rather than making it perfect to pass driver tests.
+
+    What new methods did you find to help you when you refactored?
+
+I haven't refactored at this time. Our solution had some hiccups during the process, so I will go back at the end of the week and refactor if I can.
+
+    What concepts or learnings were you able to solidify in this challenge?
+I need more practice with the attr_reader/accessor/writer. I'm a little rusty on those. They'll come back with time though. I realize that's not a learning perse, but it's a thing.
+
+=end

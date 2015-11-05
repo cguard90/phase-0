@@ -154,4 +154,30 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 new_game.check_board(new_game.call_out_update)
+
+
 #Reflection
+=begin
+
+
+    How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+I thought the pseudo coding was ok when I did it. When I went to code I realized I was focusing on the wrong thing and copied in the actual items to focus on. My pseudocoding style needs work as a whole.
+
+    What are the benefits of using a class for this challenge?
+a class can pass information between it's methods easier than methods not contained by a class can.
+
+    How can you access coordinates in a nested array?
+array[0][0] is an example. It pulls the first item from the first array within the array. you can stack as needed.
+
+    What methods did you use to access and modify the array?
+map * a lot. there are totally better ways to do this. I couldn't find them on my initial solution.
+
+    Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+haven't reviewed any for this. I did use each_with_index on the 6.7 challenge. I may try to incorporate that here. it seems like it would cut down the mountains / valleys I created here.
+
+    How did you determine what should be an instance variable versus a local variable?
+By not planning ahead. I ended up trying to use as many instance variables as possible in the end so that way the information could be used in the entire class.
+
+    What do you feel is most improved in your refactored solution?
+      results pending on that one.
+=end
