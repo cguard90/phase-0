@@ -41,40 +41,64 @@ class CreditCard
     split_nums.map! { |nums|
       nums.to_i
     }
-    p split_nums
 
     every_other = []
-    splits_nums.each_with_index  do |i|
-      if i % 2 == 0
-        every_other.push[i]
+    i = 0
+    while i < split_nums.length
+      split_nums.each_with_index  do |element|
+        every_other.push(split_nums[i])
+        i += 2
       end
     end
 
+    x = 0
+    while x <= split_nums.length
+      split_nums.each_with_index do |element|
+        split_nums.delete_at(i)
+      end
+      x += 2
+    end
 
-#     split_nums.map! { |int|
-#         int *= 2
-#     }
-#     p split_nums
+    every_other.delete_if { |element|
+      element == nil
+    }
 
+    every_other.map! do |num|
+      num = num * 2
+    end
+
+    every_other.map! { |num|
+      num.to_s
+    }
+
+    every_other.map! do |num_string|
+      num_string.split('')
+    end
+    every_other.flatten!
+
+    every_other.map! { |num|
+      num.to_i
+    }
+    split_nums.concat(every_other)
+
+    total = 0
+
+    split_nums.each { |num|
+      total += num
+    }
+
+    if total % 10 == 0
+      return true
+    else
+      return false
+    end
 
   end
-
-  #def double_digits
-    #create an empty array,
-   #p split_nums = @card_number.split('')
-    #start with 2nd to last digit, double that number, and every second digit moving towards index[0]
-  #  even_nums = []
-   # split_nums.each {
-   #   if split_num.index % 2 == 0
-   #     even_nums << split_nums
-   #   end
-   #   }
-  #end
 end
 
-test = CreditCard.new(4563960122001999)
+test = CreditCard.new(4408041234567901)
 
-test.split_and_double
+test.check_card
 # Refactored Solution
 
 
