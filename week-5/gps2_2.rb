@@ -80,7 +80,7 @@ end
 
 def print(grocery_list)
   grocery_list.each { |item, quantity|
-    puts "buy #{item} #{quantity} times." #interpolation! puts a pretty line telling you to buy an item a certain amount of times.I guess it could be phrased less commandingly.
+    return "Buy #{item} #{quantity} times." #interpolation! puts a pretty line telling you to buy an item a certain amount of times.I guess it could be phrased less commandingly.
   }
 end
 
