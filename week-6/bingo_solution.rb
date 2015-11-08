@@ -25,7 +25,7 @@
   #this will be a pain. it's done. It's not awesome, but I'm ok with that.
 
 # Initial Solution
-
+=begin
 class BingoBoard
   attr_accessor :bingo_board
   attr_reader :letters
@@ -139,10 +139,68 @@ class BingoBoard
   end
 end
 
-
+=end
 # Refactored Solution
 
 # I spent over 3 hours on this. It needs to be refactored. I'm tomboxing myself, if there is time at the end of the week I will refactor. This is some seriously awful code work though, super repetetive. I will try to refactor it by the end of the week.
+
+
+class BingoBoard
+  attr_accessor :bingo_board
+  attr_reader :letters
+  attr_accessor :call_out
+
+  def initialize(board)
+    @bingo_board = board
+    @letters = ["B", "I", "N", "G", "O"]
+    @call_out = []
+  end
+
+#Create a method to call letters and numbers (like B43). It will need to generate a letter ( "B", "I", "N", "G", "O") and a number from 1 to 100.
+  def call_out_update
+    @call_out[0] = letters.sample
+    @call_out[1] = rand 1..100
+    p @call_out
+  end
+
+  def check_board(call_out)
+    called_letter = call_out[0]
+    called_num = call_out[1]
+    check_letters = []
+    check_letters << @bingo_board
+
+  bingo_hash = {
+    "B" => 0,
+    "I" => 1,
+    "N" => 2,
+    "G" => 3,
+    "O" => 4
+  }
+
+  if bingo_hash.has_key?(called_letter)
+    check_letters.map! { |element|
+      if element.is_a? Array
+        element.each { |array_num|
+          if called_num == array_num[bingo_hash[called_letter]]
+            element[bingo_hash[called_letter]].shift
+            element[bingo_hash[called_letter]].insert(bingo_hash[called_letter], 'x')
+          end
+        }
+      end
+    }
+  else
+    puts "what?"
+  end
+
+    check_letters.flatten!(1)
+    @bingo_board == check_letters
+    puts @bingo_board[0].to_s
+    puts @bingo_board[1].to_s
+    puts @bingo_board[2].to_s
+    puts @bingo_board[3].to_s
+    puts @bingo_board[4].to_s
+  end
+end
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
