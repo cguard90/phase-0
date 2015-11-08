@@ -23,7 +23,7 @@
 
 # Don't forget to check on initialization for a card length
 # of exactly 16 digits
-
+=begin
 class CreditCard
 
   attr_reader :number
@@ -97,16 +97,58 @@ class CreditCard
 end
 
 test = CreditCard.new(4408041234567901)
-
 test.check_card
+=end
 # Refactored Solution
 
+class CreditCard
 
+  attr_reader :number
+  attr_accessor :total
 
+  def initialize(number)
+    @card_number = number.to_s
+    unless @card_number.length == 16
+      raise ArgumentError.new "Card must be 16 numbers in length"
+    end
+    @total = 0
+  end
 
+  def check_card
+    split_nums = @card_number.split('')
+    split_nums.map!.with_index do |number, index|
+      if index.even?
+        number.to_i * 2
+      else
+        number = number
+      end
+    end
 
+    split_nums.map! { |element|
+      element.to_s
+    }
 
+    split_nums.map! { |num_string|
+      num_string.split('')
+    }
+    split_nums.flatten!
 
+    total = 0
+    split_nums.each { |num|
+      total += num.to_i
+    }
+
+    if total % 10 == 0
+      return true
+    else
+      return false
+    end
+
+  end
+end
+
+test = CreditCard.new(4408041234567901)
+test.check_card
 
 # Reflection
 =begin
