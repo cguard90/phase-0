@@ -19,7 +19,7 @@ var separateComma = function(int){
   var length = newint.length;
   var i = 0;
   while (length > 0) {
-        result += newint.charAt(i);
+        result += newint.charAt(i); // new method, found looking up syntax for string conversion
         length -= 1
         if ((length % 3 == 0) && (length != 0)) {
           result += ',';
