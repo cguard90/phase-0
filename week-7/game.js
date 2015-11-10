@@ -61,32 +61,19 @@ var middle = function() {
   var choice = prompt("Are you ready to go in?")
     if (choice = 'yes') {
       console.log("good luck!");
-      conclusion(player.item)
+      conflict(player.item)
     }
     else {
        console.log("The guide knocks you out and throws you inside, secretly hoping you'll succeed. So much for choice, right?");
        player.hp -= 1
-       conclusion(player.item)
+       conflict(player.item)
    }
 }
 
-var conclusion = function(player_item) {
+var conflict = function(player_item) {
   if (player_item == 'gun') {
-    var shoot = prompt("You are in the room with the treasure, and you see the monster. It's current status is" + boss.status + ". Do you shoot? (yes or no)")
-    if (shoot = 'yes') {
-      boss.hp -= 2
-      boss.status == "enraged"
-      var shoot2 = prompt("The monster is wounded, but wakes up enraged. It charges at you, do you shoot again?")
-      if (shoot2 == 'yes') {
-        boss.hp -= 2
-        boss.status == "defeated"
-        console.log("You have defeated the monster, you now get to claim your treasure")
-      }
-      else {
-        console.log("The monster attacks you to defend itself. You suffer many injuries and escape, just to have the guide shoot you in the knee with an arrow. You live the rest of your life wondering what treasure was there.")
-      }
-  }
 
+  }
   else {
     console.log("You wonder how you made it this far, as you are itemless facing a monster. An Arrow hits you in the knee, and you flee in terror. 60 years later, you find yourself in a Tuesday next to a stranger compelled to tell them your story.")
   }
