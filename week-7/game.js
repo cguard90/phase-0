@@ -168,10 +168,8 @@ intro()
 
 // Reflection
 //
-//
-//
-//
-//
-//
-//
-//
+//     What was the most difficult part of this challenge?
+// the most difficult part of this challenge was just managing the time and coming up with something that resembled a game. I'm not sure if I'll have time to refactor mine, it's mostly text after all.
+//     What did you learn about creating objects and functions that interact with one another? This exercise really built off of 7.6 for me, so it was just reinforcing that lesson.
+//     Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work? No, not this time around. However it was nice practicing passing in variables from an object as an argument, and having functions interact with each other. In this game the only function that needs to be called is intro. If I understood it more, I might try utilizing private so that only intro can be called, and it would walk you through the game from there.
+//     How can you access and manipulate properties of objects? dot notations seems the easiest way to manipulate properties (for me). so it would be object.property = updated_property.
