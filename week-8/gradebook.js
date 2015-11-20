@@ -57,10 +57,9 @@ for(var counter = 0; counter < students.length; counter ++){
   gradebook[students[counter]] = {};
    }
 
-gradebook["Joseph"]["testScores"] = scores[0];
-gradebook["Susan"]["testScores"] = scores[1];
-gradebook["William"]["testScores"] = scores[2];
-gradebook["Elizabeth"]["testScores"] = scores[3];
+for(var counter = 0; counter < students.length; counter ++){
+  gradebook[students[counter]]["testScores"] = scores[counter];
+   }
 
 gradebook.addScore = function(name, score) {
   gradebook[name]["testScores"].push(score);
@@ -82,8 +81,13 @@ var average = function(array_of_int) {
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
+// I think this just built off of last weeks material, I'm not sure how much of it was truly new. It was mostly reinforcement of how and what arguments you could pass in.
 
+// How did you iterate over nested arrays in JavaScript? It was good practice with the for loop, this challenge wasn't as hard as several of the ruby ones were. to answer the question, with a for loop. It was actually essentially the same loop twice. Once to create the objects, it would not let us compress the creation of the object and the  addition of the array into one, but we may not have done it correctly.
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// the reduce method was new. It just might work through magic. We had to copy the syntax exactly. I'll actually be attending office hours to discuss it a little bit further becuase we weren't sure on a couple elements in it. We did get it to work though, so that's nifty.
 
 
 
