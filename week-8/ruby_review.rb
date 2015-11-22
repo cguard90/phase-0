@@ -200,3 +200,14 @@ my_car.accelerate(-35)
 
 
 # 5. Reflection
+
+
+# What concepts did you review or learn in this challenge?
+=begin
+The concepts I reviewed in this challenge were classes, methods, and then having instances of classes interact. That part was new, having 2 class instances interact. I may not have the most awesome problem to challenge, but it was a good time.
+
+# What is still confusing to you about Ruby?
+I don't know if there is anything I would necessarily call confusing about it presently. I know there's a lot I don't know about it, but i just need to keep practicing.
+
+# What are you going to study to get more prepared for Phase 1?
+I think the more methods I can expose myself to the better. Additionally as I work with javascript more it has become easier to recognize ahead of time when my syntax in ruby is correct / incorrect.
